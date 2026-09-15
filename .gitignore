@@ -1,0 +1,10 @@
+# Windows download metadata
+*:Zone.Identifier
+
+# Private reference scripts (contain site-specific paths); remove this line to publish them
+refer/
+
+# Typical run outputs
+results/
+*.log
+slurm-*.out
