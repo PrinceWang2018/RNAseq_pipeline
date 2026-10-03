@@ -409,6 +409,8 @@ step_align() {
         --outSAMtype BAM SortedByCoordinate \
         --outBAMsortingThreadN "$SORT_THREADS" \
         --outSAMattrRGline "ID:$s" "SM:$s" \
+        --outSAMstrandField intronMotif \
+        --outSAMattributes NH HI AS NM MD XS \
         ${qm[@]+"${qm[@]}"} \
         ${extra[@]+"${extra[@]}"}
     mv "${prefix}Aligned.sortedByCoord.out.bam" "$ALIGN_DIR/$s.bam"
